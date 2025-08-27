@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Exemple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- menu afficher ou masquer le sous-menu-->
+<script>
+  function toggleSubmenu() {
+  const submenu = document.getElementById("submenu");
+  submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+}
+
+</script>
+
+<!--fin menu afficher ou masquer le sous-menu-->
+
+
+  <div class="site-container">
+
+<header class="entete">
+ 
+  <button class="image-button">
+   <!-- <img src="colombe.png" alt="Bouton Colombe"> -->
+   <img src="C:\Users\Rosiana D\Documents\site3\site\colombe.png.png" alt="Colombe" title="Connexion">
+  <span style="font-family: 'Times New Roman', serif;">
+   <p class="btn-text">MEET ME IN CHRIST <br> <i> « Rencontre Moi en Christ » </i> <br> <i> Si, un jour, tu veux pouvoir me dire : Marry Me In Christ </i> <!--<br> 
+    Échanger, se rencontrer en vue de s’engager… <br> Cœurs et âmes non prêts.tes, s’abstenir.--></p>
+  </button>
+ </span>
+</header>
+
+
+  <main>
+    <nav>
+  <ul>
+  <li onclick="toggleSubmenu()" class="parent">Accueil</li>
+  <ul id="submenu" class="submenu">
+    <li>Contexte</li>
+    <li>Valeur</li>
+  </ul>
+  <li>Public Cible</li>
+  <li>Ressource</li>
+  <li>Vision et mission</li>
+</ul>
+
+
+    </nav>
+
+    <section>
+    <!--  <h2 class="titre-centre">Qui nous sommes ?</h2> --> 
+ <!-- <p class="texte-left">
+  Noémi dit à Ruth : <br> Il est bon que tu sortes avec ses servantes. Ainsi, <br>
+  on ne te maltraitera pas dans un autre champ...
+</p>
+<p class="reference-centre">Ruth 2v22.</p>--> 
+
+   <img src="C:\Users\Rosiana D\Documents\site3\site\psentationjpg.jpg">
+   
+    </section>
+  </main>
+
+  <footer>
+   <h4 class="titre-espace">
+    <h5 class="titre">Échanger, se rencontrer en vue de s’engager… <span class="faq">Cœurs et âmes non prêts.tes, s’abstenir</span></h5>
+</h4>
+     
+  <h5 class="titre">Reglement intérieur <span class="faq">FAQ</span></h5>
+</h4>
+    &copy; 2025 MEET ME IN CHRIST - Tous droits réservés
+  </footer>
+</div>
+</body>
+</html>

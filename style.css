@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  /* Image de fond */
+  background-image: url('"C:\Users\Rosiana D\Documents\site3\site\fond.jpeg.jpeg"'); /* adapte le chemin si besoin */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.site-container {
+  width: 90%;
+  max-width: 1000px;
+  background-color: rgba(255, 255, 255, 0.95); /* Fond blanc légèrement transparent */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* bouton image */
+
+.entete {
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center;     /* centre verticalement */
+  height: 250px;            /* hauteur de l'entête, ajuste si besoin */
+  background-color: #004080; /* couleur d'exemple */
+}
+
+.image-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.image-button img {
+  height: 100px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.image-button:hover img {
+  transform: scale(1.1) translateY(-5px);
+}
+
+.btn-text {
+  margin-top: 5px;
+  font-size: 20px;
+  color: white; /* adapte la couleur selon ton fond */
+  text-align: center;
+
+}
+
+/* fin bouton image */
+
+/* pied de la page*/
+
+footer {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 61%;
+}
+.titre {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.faq {
+  margin-left: 100px; /* réduit l’espace entre les mots */
+}
+
+/* fin pied de la page*/
+main {
+  display: flex;
+  min-height: calc(100vh - 120px); /* Hauteur totale moins header + footer */
+  background-image: url('images/fond.jpg'); /* chemin de ton image */
+  background-size: cover;         /* pour que l'image remplisse l'espace */
+  background-position: center;    /* centrer l'image */
+  background-repeat: no-repeat;   /* éviter les répétitions */
+}
+/*
+  partie du meu
+*/
+
+nav {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+
+nav a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+}
+
+section {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.submenu {
+  display: none;
+  padding-left: 20px; /* Indentation des sous-titres */
+}
+
+.parent {
+  cursor: pointer;
+}
+
+ /*  contenu  du site */
+.titre-centre {
+  text-align: center;
+  font-weight: bold;
+}
+
+.texte-centre {
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.reference-centre {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 10px;
+}
